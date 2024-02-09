@@ -6,7 +6,7 @@ def obtener_porcentaje(fraction):
         if numerador > denominador:
             raise ValueError("El numerador debe ser menor o igual al denominador.")
         
-        porcentaje = numerador / denominador * 100
+        porcentaje = numerador/denominador * 100
 
         if porcentaje < 1:
             return "E"
