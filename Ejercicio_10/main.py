@@ -1,16 +1,15 @@
-import circulo from Ejercicio_3
-from Ejercicio_4.area_rectangulo import rectangulo
+from funciones import circulo, rectangulo
 
 def calcular_area_circulo():
     radio = float(input("Ingrese el radio del círculo: "))
-    circ1 = circulo(radio)  # Crear instancia de CIRCULO
+    circ1 = circulo(radio)  
     area = circ1.calcular_area()
     print("El área del círculo es:", area)
 
 def calcular_area_rectangulo():
     largo = float(input("Ingrese el largo del rectángulo: "))
     ancho = float(input("Ingrese el ancho del rectángulo: "))
-    rect1 = rectangulo(largo, ancho)  # Crear instancia de RECTANGULO
+    rect1 = rectangulo(largo, ancho) 
     area = rect1.calcular_area()
     print("El área del rectángulo es:", area)
 
@@ -20,6 +19,7 @@ def calcular_area_cuadrado():
     print("El área del cuadrado es:", area)
 
 def mostrar_menu():
+    print("-------------------------------------")
     print("Menú:")
     print("1. Calcular el área de un círculo")
     print("2. Calcular el área de un rectángulo")
