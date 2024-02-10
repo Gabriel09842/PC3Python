@@ -5,7 +5,7 @@ class circulo:
         self.radio = radio
 
     def calcular_area(self):
-        return math.pi * self.radio ** 2
+        return 3.14 * pow(self.radio, 2)
             
 class rectangulo:
     def __init__(self, largo, ancho):
